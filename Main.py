@@ -6,6 +6,8 @@ from gtts import gTTS
 import openai
 import speech_recognition as sr
 
+#"change ur api key"
+
 api_key = "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"
 
 lang = 'en'
@@ -25,6 +27,8 @@ def get_audio():
             global guy
             guy = said
 
+            #"Haami is My assisant name"
+            
             if "Haami" in said:
                 words = said.split()
                 new_string = ' '.join(words[1:])
